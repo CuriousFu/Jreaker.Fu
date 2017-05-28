@@ -1,0 +1,55 @@
+# Nath GRUB2 theme version 0.1
+# Basado en Archxion y Dharma
+# Wada Erna <wada@openmailbox.org>
+# foro.desdelinux.net
+
+# Main
+title-text: "Powered by GNU/Linux"
+title-font: "Terminus Bold 18"
+title-color: "#DCDDDD"
+message-font: "Terminus Regular 14"
+message-color: "#00FF00"
+message-color: "#F6F6F6"
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "Terminus Regular 12"
+
+# Menu
++ boot_menu {
+    left = 15%
+    width = 70%
+    top = 28%
+    height = 100%
+    item_font = "Terminus Regular 12"
+    selected_item_font = "Terminus Bold 12"
+    item_color = "#B0B0B0"
+    selected_item_color = "#DCDDDD"
+    item_height = 48
+    item_padding = 15
+    item_spacing = 6
+    icon_widht = 42
+    icon_height = 42
+    item_icon_space = 8
+    selected_item_pixmap_style = "select_bkg_*.png"
+    menu_pixmap_style = ""
+    scrollbar = true
+    scrollbar_width = 24
+    scrollbar_thumb = ""
+    scrollbar_frame = ""
+}
+
+
+# Information
++ hbox {
+    top = 94%
+    left = 28%
+    height = 30
+    width = 30%
+    align = "center"
+    + label {text = "Enter: " font = "Terminus Bold 12" color = "#4C4C4C"}
+    + label {text = "Boot Selection     " font = "Terminus Regular 12" color = "#1692D0"}
+    + label {text = "E: " font = "Terminus Bold 12" color = "#4C4C4C"}
+    + label {text = "Edit Selection     " font = "Terminus Regular 12" color = "#1692D0"}
+    + label {text = "C: " font = "Terminus Bold 12" color = "#4C4C4C"}
+    + label {text = "GRUB Commandline     " font = "Terminus Regular 12" color = "#1692D0"}
+}
